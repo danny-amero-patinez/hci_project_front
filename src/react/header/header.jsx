@@ -1,6 +1,7 @@
 import { BsChatRight } from "react-icons/bs"
 import { IoMdNotificationsOutline } from "react-icons/io"
 import { BiUserCircle } from "react-icons/bi"
+import createForo from "../Foro/crete_foro";
 import "../../style/header/header.css";
 
 function header() {
@@ -8,7 +9,7 @@ function header() {
     return (
         <>
             <div className="header">
-                <div className="logo">
+                <div className="logo" id="logo">
                     <img src={logo} alt="Logo" />   
                 </div>                
                 <div className="option">
@@ -24,7 +25,7 @@ function header() {
                 </div>
             </div>
         </>
-    );
+    );    
 }
 
 export default header;
