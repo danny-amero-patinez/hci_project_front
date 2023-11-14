@@ -1,0 +1,34 @@
+.menu_autores{    
+    background-color: #4fd7fc;
+    color: white;
+    text-align: center;
+    font-size: 8pt;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 12px;    
+
+    width: 100%;
+}
+
+.menu_autores h2{
+    font-size: 20pt;
+}
+
+.menu_autores ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    list-style: none;    
+
+    overflow: auto;   
+    flex-wrap: nowrap;
+}
+
+.menu_autores ul li{
+    margin: 10px;
+}
+
+.menu_autores ul li:first-child{
+    margin-left: 60px;
+}

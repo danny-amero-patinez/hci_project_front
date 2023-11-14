@@ -1,0 +1,30 @@
+.menu_generos {
+    text-align: center;
+    background-color: rgba(4, 198, 251, .7);
+    color: white;
+    border-radius: 20px;
+    width: 100%;
+    height: 400px;    
+    margin-top: 40px;
+}
+
+.menu_generos h2{
+    font-style: 'Georgia';
+    padding: 12px;
+}
+
+.menu_generos ul {    
+    height: 240px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20;    
+    list-style: none;
+}
+
+.menu_generos li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 12px;
+}
