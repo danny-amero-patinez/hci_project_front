@@ -6,12 +6,17 @@ const Home = (props) => {
     const navigate = useNavigate();
     
     const onButtonClick = () => {
-        // You'll update this function later
+        if (loggedIn) {
+            localStorage.removeItem("user")
+            props.setLoggedIn(false)
+        } else {
+            navigate("/login")
+        }
     }
 
     return <div className="mainContainer">
         <div className={"titleContainer"}>
-            <div>HOME DE PRUEBA</div>
+            <div>LANDING PAGE DE PRUEBA</div>
         </div>
         <div>
             Texto de prueba

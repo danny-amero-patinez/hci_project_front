@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Nav from 'react-bootstrap/Nav';
 
 const Login = (props) => {
     const [email, setEmail] = useState("")
@@ -40,35 +41,45 @@ const Login = (props) => {
 
     }
 
-    return <div className={"mainContainer"}>
-        <div className={"titleContainer"}>
-            <div>Login</div>
-        </div>
-        <br />
-        <div className={"inputContainer"}>
-            <input
-                value={email}
-                placeholder="Enter your email here"
-                onChange={ev => setEmail(ev.target.value)}
-                className={"inputBox"} />
-            <label className="errorLabel">{emailError}</label>
-        </div>
-        <br />
-        <div className={"inputContainer"}>
-            <input
-                value={password}
-                placeholder="Enter your password here"
-                onChange={ev => setPassword(ev.target.value)}
-                className={"inputBox"} />
-            <label className="errorLabel">{passwordError}</label>
-        </div>
-        <br />
-        <div className={"inputContainer"}>
-            <input
-                className={"inputButton"}
-                type="button"
-                onClick={onButtonClick}
-                value={"Log in"} />
+    return <div>
+        <Nav justify variant="tabs" defaultActiveKey="/home" style={{backgroundColor: "lightblue"}}>
+            <Nav.Item>
+                <Nav.Link href="/home">Iniciar sesión</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+                <Nav.Link eventKey="link-1">Registrar</Nav.Link>
+            </Nav.Item>
+        </Nav>
+        <div className="mainContainer">
+            <div className={"titleContainer"}>
+                <div>Bienvenido</div>
+            </div>
+            <br />
+            <div className={"inputContainer"}>
+                <input
+                    value={email}
+                    placeholder="Ingresa tu usuario o correo"
+                    onChange={ev => setEmail(ev.target.value)}
+                    className={"inputBox"} />
+                <label className="errorLabel">{emailError}</label>
+            </div>
+            <br />
+            <div className={"inputContainer"}>
+                <input
+                    value={password}
+                    placeholder="Ingresa tu contraseña"
+                    onChange={ev => setPassword(ev.target.value)}
+                    className={"inputBox"} />
+                <label className="errorLabel">{passwordError}</label>
+            </div>
+            <br />
+            <div className={"inputContainer"}>
+                <input
+                    className={"inputButton"}
+                    type="button"
+                    onClick={onButtonClick}
+                    value={"Iniciar sesión"} />
+            </div>
         </div>
     </div>
 }
