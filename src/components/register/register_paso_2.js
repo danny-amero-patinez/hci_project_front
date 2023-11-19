@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Nav from 'react-bootstrap/Nav';
 
-const Login = (props) => {
+const RegisterPaso2 = (props) => {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     const [emailError, setEmailError] = useState("")
@@ -42,23 +42,23 @@ const Login = (props) => {
     }
 
     return <form>
-        <Nav justify variant="tabs" style={{backgroundColor: "#6dc6ff"}}>
-            <Nav.Item style={{backgroundColor: "#20a8ff"}}>
+        <Nav justify variant="tabs" defaultActiveKey="/register" style={{backgroundColor: "#61dafb"}}>
+            <Nav.Item>
                 <Nav.Link href="/login" style={{color: "white"}}>Iniciar sesión</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-                <Nav.Link href="/register" style={{color: "white"}}>Registrar</Nav.Link>
+                <Nav.Link href="/register">Registrar</Nav.Link>
             </Nav.Item>
         </Nav>
-        <div className="mainContainer" style={{backgroundColor: "#b2dfff"}}>
+        <div className="mainContainer" style={{backgroundColor: "lightblue"}}>
             <div className={"titleContainer"}>
-                <div>BIENVENIDO</div>
+                <div>DATOS SOBRE TU CUENTA</div>
             </div>
             <br />
             <div className={"inputContainer"}>
                 <input
                     value={email}
-                    placeholder="Ingresa tu usuario o correo"
+                    placeholder="Ingresa tu nombre de usuario"
                     onChange={ev => setEmail(ev.target.value)}
                     className={"inputBox"} />
                 <label className="errorLabel">{emailError}</label>
@@ -66,11 +66,29 @@ const Login = (props) => {
             <br />
             <div className={"inputContainer"}>
                 <input
-                    value={password}
-                    placeholder="Ingresa tu contraseña"
-                    onChange={ev => setPassword(ev.target.value)}
+                    value={email}
+                    placeholder="Ingresa tu correo"
+                    onChange={ev => setEmail(ev.target.value)}
                     className={"inputBox"} />
-                <label className="errorLabel">{passwordError}</label>
+                <label className="errorLabel">{emailError}</label>
+            </div>
+            <br />
+            <div className={"inputContainer"}>
+                <input
+                    value={email}
+                    placeholder="Ingresa tu contraseña"
+                    onChange={ev => setEmail(ev.target.value)}
+                    className={"inputBox"} />
+                <label className="errorLabel">{emailError}</label>
+            </div>
+            <br />
+            <div className={"inputContainer"}>
+                <input
+                    value={email}
+                    placeholder="Repite tu contraseña"
+                    onChange={ev => setEmail(ev.target.value)}
+                    className={"inputBox"} />
+                <label className="errorLabel">{emailError}</label>
             </div>
             <br />
             <div className={"inputContainer"}>
@@ -78,11 +96,11 @@ const Login = (props) => {
                     className={"inputButton"}
                     type="button"
                     onClick={onButtonClick}
-                    value={"Iniciar sesión"}
-                    style={{backgroundColor: "#20a8ff"}} />
+                    value={"Continuar"}
+                    style={{backgroundColor: "#61dafb"}} />
             </div>
         </div>
     </form>
 }
 
-export default Login
+export default RegisterPaso2
