@@ -1,0 +1,35 @@
+.barraBusqueda{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(4, 198, 251, .7);
+    width: 70%;
+    height: 40px;
+    margin: 20px auto;
+    border-radius: 20px;
+
+}
+
+.barraBusqueda input{
+    border: none;    
+    height: 100%;
+    width: 80%;
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 15px;
+    outline: none;
+    color: white;
+    font-size: 15px;
+}
+
+.barraBusqueda input::placeholder{
+    color: white;
+}
+
+.barraBusqueda .barraBusqueda__icon{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

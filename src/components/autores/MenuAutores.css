@@ -1,0 +1,34 @@
+.contAutores{
+    width: 100%;
+    background-color: rgba(4, 198, 251, .7);
+    color: white;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 8px;
+    height: 160px;
+}
+
+.contAutores img{
+    width: 52px;
+    height: 52px;
+}
+
+.contAutores h2{
+    font-size: 15px;
+    text-align: center;
+}
+
+.contAutores ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    overflow: scroll;
+    margin-top: 4px;
+}
+
+.contAutores ul li{
+    list-style: none;
+    margin: 0px 10px;
+}

@@ -1,0 +1,28 @@
+.infoLibro{    
+    width: 50%;    
+    margin: 5px;
+    height: 80px;        
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.infoLibro__foto, .infoLibro__foto img{
+    width: 72px;
+    height: 68px;
+}
+
+.infoLibro__info{    
+    margin: 0px 15px;    
+}
+
+.infoLibro__info h2{
+    font-size: 14px;
+}
+
+.infoLibro__info h3, .infoLibro__info h4{
+    font-size: 10px;
+    margin: 2px 0;
+}

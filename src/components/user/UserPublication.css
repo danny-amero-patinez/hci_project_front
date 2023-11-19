@@ -1,0 +1,29 @@
+.userPublication{
+    width: 50%;    
+    height: 80px;
+    margin: 5px;    
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.userPublication__foto img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;    
+}
+
+.userPublication__info{      
+    margin: 0px 2px;
+}
+
+.userPublication__info h2{
+    font-size: 14px;  
+}
+
+.userPublication__info h3, .userPublication__info h4{
+    font-size: 10px;
+    margin: 2px 0;
+}
