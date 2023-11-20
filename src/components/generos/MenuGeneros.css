@@ -1,0 +1,30 @@
+.contGeneros {
+    text-align: center;
+    background-color: rgba(4, 198, 251, .7);
+    color: white;
+    border-radius: 20px;
+    width: 100%;    
+    margin-top: 40px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contGeneros h2{
+    font-style: 'Georgia';    
+    padding: 12px;
+}
+
+#contGeneros__titulo{
+    font-size: 30px;
+}
+
+.contGeneros ul {       
+    margin-top: 10px; 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10;
+    list-style: none;
+}

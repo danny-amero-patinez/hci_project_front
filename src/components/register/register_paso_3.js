@@ -15,6 +15,13 @@ const RegisterPaso3 = (props) => {
     const [passwordError, setPasswordError] = useState("")
 
     const [checked, setChecked] = useState(false);
+    const [checked2, setChecked2] = useState(false);
+    const [checked3, setChecked3] = useState(false);
+    const [checked4, setChecked4] = useState(false);
+    const [checked5, setChecked5] = useState(false);
+    const [checked6, setChecked6] = useState(false);
+    const [checked7, setChecked7] = useState(false);
+    const [checked8, setChecked8] = useState(false);
     
     const navigate = useNavigate();
         
@@ -92,9 +99,9 @@ const RegisterPaso3 = (props) => {
                                 id="toggle-check"
                                 type="checkbox"
                                 variant="outline-primary"
-                                checked={checked}
+                                checked={checked2}
                                 value="1"
-                                onChange={(e) => setChecked(e.currentTarget.checked)}
+                                onChange={(e2) => setChecked2(e2.currentTarget.checked)}
                             >
                                 Memorias
                             </ToggleButton>
@@ -112,9 +119,9 @@ const RegisterPaso3 = (props) => {
                                 id="toggle-check"
                                 type="checkbox"
                                 variant="outline-primary"
-                                checked={checked}
+                                checked={checked3}
                                 value="1"
-                                onChange={(e) => setChecked(e.currentTarget.checked)}
+                                onChange={(e) => setChecked3(e.currentTarget.checked)}
                             >
                                 Novela
                             </ToggleButton>
@@ -129,9 +136,9 @@ const RegisterPaso3 = (props) => {
                                 id="toggle-check"
                                 type="checkbox"
                                 variant="outline-primary"
-                                checked={checked}
+                                checked={checked4}
                                 value="1"
-                                onChange={(e) => setChecked(e.currentTarget.checked)}
+                                onChange={(e) => setChecked4(e.currentTarget.checked)}
                             >
                                 Poesía
                             </ToggleButton>
@@ -149,9 +156,9 @@ const RegisterPaso3 = (props) => {
                                 id="toggle-check"
                                 type="checkbox"
                                 variant="outline-primary"
-                                checked={checked}
+                                checked={checked5}
                                 value="1"
-                                onChange={(e) => setChecked(e.currentTarget.checked)}
+                                onChange={(e) => setChecked5(e.currentTarget.checked)}
                             >
                                 Romance
                             </ToggleButton>
@@ -166,9 +173,9 @@ const RegisterPaso3 = (props) => {
                                 id="toggle-check"
                                 type="checkbox"
                                 variant="outline-primary"
-                                checked={checked}
+                                checked={checked6}
                                 value="1"
-                                onChange={(e) => setChecked(e.currentTarget.checked)}
+                                onChange={(e) => setChecked6(e.currentTarget.checked)}
                             >
                                 Cuento
                             </ToggleButton>
@@ -186,9 +193,9 @@ const RegisterPaso3 = (props) => {
                                 id="toggle-check"
                                 type="checkbox"
                                 variant="outline-primary"
-                                checked={checked}
+                                checked={checked7}
                                 value="1"
-                                onChange={(e) => setChecked(e.currentTarget.checked)}
+                                onChange={(e) => setChecked7(e.currentTarget.checked)}
                             >
                                 No Ficción
                             </ToggleButton>
@@ -203,9 +210,9 @@ const RegisterPaso3 = (props) => {
                                 id="toggle-check"
                                 type="checkbox"
                                 variant="outline-primary"
-                                checked={checked}
+                                checked={checked8}
                                 value="1"
-                                onChange={(e) => setChecked(e.currentTarget.checked)}
+                                onChange={(e) => setChecked8(e.currentTarget.checked)}
                             >
                                 Teatro
                             </ToggleButton>
@@ -216,7 +223,7 @@ const RegisterPaso3 = (props) => {
             <br />
             <div className={"inputContainer"}>
                 <a 
-                href="/register_paso_2"
+                href="/home"
                 className={"inputButton btn btn-primary"}
                 type="button"
                 style={{backgroundColor: "#20a8ff"}}

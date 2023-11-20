@@ -1,0 +1,32 @@
+:root{
+    --blue-50: #eef7ff;
+    --blue-100: #dceeff;
+    --blue-200: #b2dfff;
+    --midnight-blue-300: #6dc6ff;
+    --midnight-blue-400: #20a8ff;
+    --midnight-blue-500: #008dff;
+    --midnight-blue-600: #006edf;
+    --midnight-blue-700: #0057b4;
+    --midnight-blue-800: #004a94;
+    --midnight-blue-900: #003366;
+    --blue-950: #002651;    
+}
+
+
+.reactions, .reactions > *{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.reactions > *{    
+    font-size: 10px;    
+    color: white;
+    padding: 10px;
+}
+
+.reactions{
+    background-color: var(--midnight-blue-400);
+    width: 100%;    
+}

@@ -77,12 +77,14 @@ const Login = (props) => {
             </div>
             <br />
             <div className={"inputContainer"}>
-                <input
-                    className={"inputButton"}
-                    type="button"
-                    onClick={onButtonClick}
-                    value={"Iniciar sesión"}
-                    style={{backgroundColor: "#20a8ff"}} />
+                <a 
+                href="/home"
+                className={"inputButton btn btn-primary"}
+                type="button"
+                style={{backgroundColor: "#20a8ff"}}
+                >
+                    Iniciar sesión
+                </a>
             </div>
         </div>
     </form>

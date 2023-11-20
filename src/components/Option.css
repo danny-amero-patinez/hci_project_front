@@ -1,0 +1,16 @@
+li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;                    
+}
+
+li img{
+    width: 52px;
+    height: 52px;    
+}
+
+.contGeneros h2{
+    text-align: center;
+    font-size: 15px;
+}

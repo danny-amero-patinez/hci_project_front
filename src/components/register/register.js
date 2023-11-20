@@ -4,6 +4,10 @@ import Nav from 'react-bootstrap/Nav';
 
 const Register = (props) => {
     const [email, setEmail] = useState("")
+    const [email2, setEmail2] = useState("")
+    const [email3, setEmail3] = useState("")
+    const [email4, setEmail4] = useState("")
+
     const [password, setPassword] = useState("")
     const [emailError, setEmailError] = useState("")
     const [passwordError, setPasswordError] = useState("")
@@ -69,27 +73,27 @@ const Register = (props) => {
             <br />
             <div className={"inputContainer"}>
                 <input
-                    value={email}
+                    value={email2}
                     placeholder="Ingresa tu apellido paterno"
-                    onChange={ev => setEmail(ev.target.value)}
+                    onChange={ev => setEmail2(ev.target.value)}
                     className={"inputBox"} />
                 <label className="errorLabel">{emailError}</label>
             </div>
             <br />
             <div className={"inputContainer"}>
                 <input
-                    value={email}
+                    value={email3}
                     placeholder="Ingresa tu apellido materno"
-                    onChange={ev => setEmail(ev.target.value)}
+                    onChange={ev => setEmail3(ev.target.value)}
                     className={"inputBox"} />
                 <label className="errorLabel">{emailError}</label>
             </div>
             <br />
             <div className={"inputContainer"}>
                 <input
-                    value={email}
+                    value={email4}
                     placeholder="Ingresa tu fecha de nacimiento"
-                    onChange={ev => setEmail(ev.target.value)}
+                    onChange={ev => setEmail4(ev.target.value)}
                     className={"inputBox"} />
                 <label className="errorLabel">{emailError}</label>
             </div>
