@@ -42,6 +42,9 @@ const Login = (props) => {
     }
 
     return <form>
+        <figure>
+            <img src="img/Logo.png" alt="logo" style={{width: "35%"}} />
+        </figure>
         <Nav justify variant="tabs" style={{backgroundColor: "#6dc6ff"}}>
             <Nav.Item style={{backgroundColor: "#20a8ff"}}>
                 <Nav.Link href="/login" style={{color: "white"}}>Iniciar sesión</Nav.Link>

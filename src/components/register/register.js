@@ -42,15 +42,18 @@ const Register = (props) => {
     }
 
     return <form>
-        <Nav justify variant="tabs" defaultActiveKey="/register" style={{backgroundColor: "#61dafb"}}>
+        <figure>
+            <img src="img/Logo.png" alt="logo" style={{width: "35%"}} />
+        </figure>
+        <Nav justify variant="tabs" style={{backgroundColor: "#6dc6ff"}}>
             <Nav.Item>
                 <Nav.Link href="/login" style={{color: "white"}}>Iniciar sesión</Nav.Link>
             </Nav.Item>
-            <Nav.Item>
-                <Nav.Link href="/register">Registrar</Nav.Link>
+            <Nav.Item style={{backgroundColor: "#20a8ff"}}>
+                <Nav.Link href="/register" style={{color: "white"}}>Registrar</Nav.Link>
             </Nav.Item>
         </Nav>
-        <div className="mainContainer" style={{backgroundColor: "lightblue"}}>
+        <div className="mainContainer" style={{backgroundColor: "#b2dfff"}}>
             <div className={"titleContainer"}>
                 <div>DATOS PERSONALES</div>
             </div>
@@ -96,7 +99,7 @@ const Register = (props) => {
                 href="/register_paso_2"
                 className={"inputButton btn btn-primary"}
                 type="button"
-                style={{backgroundColor: "#61dafb"}}
+                style={{backgroundColor: "#20a8ff"}}
                 >
                     Continuar
                 </a>
